@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-commerce"
+version = "0.0.1"
+description = "Django Ecommerce project"
+authors = ["gareisdev <leonelgareis@protonmail.ch>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_commerce"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.1"
+psycopg2 = "^2.9.6"
+djangorestframework = "^3.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-django = "^4.5.2"
+flake8 = "^6.0.0"
+mypy = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
